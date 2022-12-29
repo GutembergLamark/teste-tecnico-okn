@@ -1,0 +1,348 @@
+.main-content {
+  .backgorund-amazonia__info,
+  .whoe-we-are__info,
+  .join__info,
+  .projects__info,
+  .function__info,
+  .values__info,
+  .media__info,
+  .speak__info {
+    @include Flex(center, flex-start, column);
+    gap: 1.25rem;
+
+    height: calc(60vh - 8rem);
+
+    margin: 2rem;
+    padding: 2rem;
+
+    border: 1px solid $--black-color;
+
+    width: 100%;
+
+    .info__topic {
+      font-family: "Brown", sans-serif;
+
+      @include Typography(400, 0.875rem, uppercase, normal);
+
+      letter-spacing: 0.2rem;
+    }
+
+    .info__title {
+      font-family: "Brown", sans-serif;
+
+      @include Typography(bold, 1.25rem, uppercase, normal);
+
+      span {
+        color: $--primary-color;
+      }
+    }
+
+    .info__description {
+      @include Typography(400, 0.875rem, normal, normal);
+
+      height: 70%;
+      overflow-y: scroll;
+    }
+
+    .info__description::first-letter {
+      text-transform: capitalize;
+    }
+
+    .info__container-more {
+      @include Flex(center, center, row);
+      gap: 4px;
+
+      .container-more__link {
+        font-family: "Brown", sans-serif;
+
+        padding: 12px;
+
+        border: 1px solid $--black-color;
+        border-radius: 30px;
+
+        color: $--black-color;
+
+        @include Typography(500, 0.75rem, uppercase, normal);
+        text-decoration: none;
+        white-space: nowrap;
+
+        transition: all 0.5s ease-in-out;
+      }
+
+      .container-more__container-img {
+        @include Flex(center, center, row);
+
+        border-radius: 100%;
+        border: 1px solid black;
+
+        padding: 12px;
+
+        cursor: pointer;
+
+        transition: all 0.5s ease-in-out;
+
+        img {
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+
+    .info__container-more:hover .container-more__link,
+    .info__container-more:hover .container-more__container-img {
+      background-color: $--primary-color;
+      color: $--white-color;
+
+      border: 1px solid transparent;
+
+      img {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    .backgorund-amazonia__info,
+    .whoe-we-are__info,
+    .join__info,
+    .projects__info,
+    .function__info,
+    .values__info,
+    .media__info,
+    .speak__info {
+      height: calc(60vh - 9.125rem);
+
+      margin: 2.5rem;
+
+      .info__topic {
+        @include Typography(400, 0.875rem, uppercase, normal);
+      }
+
+      .info__title {
+        @include Typography(bold, 1.25rem, uppercase, normal);
+      }
+
+      .info__description {
+        height: max-content;
+
+        overflow: inherit;
+      }
+
+      .info__container-more {
+        .container-more__link {
+          font-size: 0.75rem;
+        }
+        .container-more__container-img {
+          padding: 12px;
+        }
+      }
+    }
+
+    .whoe-we-are__info {
+      padding: 0 3rem;
+    }
+
+    .projects__info {
+      .info__description {
+        height: max-content;
+        max-height: 100%;
+
+        overflow-y: scroll;
+      }
+    }
+
+    .function__info {
+      width: inherit;
+      height: 50%;
+
+      padding: 3rem 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .backgorund-amazonia__info {
+      min-width: calc(50% - 9.125rem);
+      height: calc(70vh - 9.125rem);
+    }
+
+    .projects__info {
+      .info__description {
+        overflow-y: inherit;
+      }
+    }
+
+    .function__info {
+      width: 100%;
+      height: max-content;
+
+      padding: 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .backgorund-amazonia__info,
+    .whoe-we-are__info,
+    .join__info,
+    .projects__info,
+    .function__info,
+    .values__info,
+    .media__info,
+    .speak__info {
+      height: calc(70vh - 9.125rem);
+
+      width: 50%;
+
+      .info__topic {
+        @include Typography(400, 1rem, uppercase, normal);
+      }
+
+      .info__title {
+        @include Typography(bold, 2rem, uppercase, normal);
+      }
+
+      .info__description {
+        @include Typography(400, 0.9375rem, normal, normal);
+      }
+
+      .info__container-more {
+        .container-more__link {
+          padding: 12px;
+
+          @include Typography(500, 0.9375rem, uppercase, normal);
+        }
+
+        .container-more__container-img {
+          padding: 14px;
+        }
+      }
+    }
+
+    .function__info {
+      width: 100%;
+    }
+
+    .values__info {
+      width: auto;
+    }
+  }
+
+  .whoe-we-are__info {
+    width: 100%;
+
+    .info__title {
+      width: 70%;
+    }
+  }
+
+  .join__info {
+    padding: 0;
+
+    width: 40%;
+
+    .info__title {
+      width: 100%;
+    }
+
+    .info__container-more {
+      align-self: center;
+    }
+  }
+
+  .projects__info {
+    .info__title {
+      span {
+        color: $--white-color;
+      }
+    }
+
+    .info__container-more {
+      .container-more__link {
+        color: $--white-color;
+
+        border-color: $--white-color;
+      }
+
+      .container-more__container-img {
+        border-color: $--white-color;
+      }
+    }
+
+    .info__container-more:hover .container-more__link,
+    .info__container-more:hover .container-more__container-img {
+      background-color: $--black-color;
+
+      img {
+        filter: none;
+      }
+    }
+  }
+
+  .function__info {
+    @include Flex(center, flex-end, column);
+
+    .info__title {
+      width: 60%;
+      text-align: right;
+    }
+
+    .info__description {
+      width: 80%;
+
+      text-align: right;
+    }
+
+    .info__container-more {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  .values__info {
+    padding: 2rem 6rem;
+  }
+
+  .media__info {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+
+    .info__title {
+      width: 15vw;
+    }
+  }
+
+  .speak__info {
+    align-items: center;
+
+    padding-top: 0;
+
+    width: inherit;
+
+    .info__topic {
+      color: $--white-color;
+    }
+
+    .info__title {
+      color: $--white-color;
+    }
+
+    .info__description {
+      text-align: center;
+
+      color: $--white-color;
+    }
+  }
+
+  .projects__info,
+  .join__info,
+  .whoe-we-are__info,
+  .function__info,
+  .values__info,
+  .media__info,
+  .speak__info {
+    border: none;
+
+    margin: 0;
+
+    height: max-content;
+  }
+}

@@ -1,0 +1,191 @@
+.main-content__media {
+  // @include Flex(center, center, row);
+  @include Flex(center, center, column);
+  gap: 4rem;
+
+  padding: 5rem 0;
+
+  .media__info {
+    width: max-content;
+    flex-direction: column;
+
+    .info__title {
+      width: 100vw;
+      text-align: center;
+      padding: 0 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    .media__info {
+      .info__title {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .media__info {
+      width: 20%;
+
+      padding: 2rem;
+
+      .info__topic {
+        width: 100%;
+        text-align: left;
+      }
+
+      .info__title {
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+
+  .container__notices {
+    @include Flex(center, center, row);
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    width: 60%;
+    height: 100%;
+    .notices__card {
+      @include Flex(center, flex-start, column);
+      gap: 0.75rem;
+
+      border: 1px solid $--black-color;
+
+      padding: 1.5rem 1rem;
+
+      position: relative;
+
+      width: 100%;
+      max-height: 40%;
+
+      .card__container-image {
+        width: 100%;
+
+        max-height: 1.875rem;
+
+        img {
+          object-fit: cover;
+
+          max-width: 90%;
+          max-height: inherit;
+        }
+      }
+
+      .card__text {
+        .card__resume {
+          margin-bottom: 0.75rem;
+
+          @include Typography(bold, 1rem, normal, normal);
+        }
+
+        .card__description {
+          @include Typography(400, 0.875rem, normal, normal);
+        }
+      }
+
+      .card__date {
+        margin-bottom: 3rem;
+
+        font-style: italic;
+        @include Typography(300, 0.875rem, normal, normal);
+      }
+
+      .card__button-more {
+        background-color: $--primary-color;
+        color: $--white-color;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        padding: 1rem;
+
+        width: 100%;
+
+        @include Typography(400, 1rem, uppercase, left);
+
+        transition: all 0.5s ease-in-out;
+      }
+
+      .card__button-more:hover {
+        background-color: $--black-color;
+        color: $--white-color;
+      }
+    }
+
+    @media only screen and (min-width: 480px) {
+      .notices__card {
+        .card__container-image {
+          width: 100%;
+
+          img {
+            object-fit: cover;
+
+            max-width: inherit;
+            height: inherit;
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .notices__card {
+        width: 28%;
+        height: 50vh;
+
+        gap: 0.75rem;
+
+        .card__container-image {
+          max-width: 100%;
+          max-height: 1.875rem;
+
+          img {
+            object-fit: cover;
+
+            max-width: inherit;
+            max-height: inherit;
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .notices__card {
+        width: 30%;
+        max-width: 300px;
+        height: 40vh;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .container__notices {
+      width: 80%;
+
+      gap: 1rem;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .container__notices {
+      gap: 1.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .container__notices {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content__media {
+    flex-direction: row;
+    gap: 0;
+  }
+}

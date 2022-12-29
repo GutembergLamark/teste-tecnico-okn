@@ -1,0 +1,42 @@
+.main-content {
+  .main-content__backgorund-amazonia {
+    @include Flex(center, flex-start, row);
+
+    border-bottom: 1px solid $--black-color;
+
+    height: 60vh;
+
+    .background-amazonia__container-landscape {
+      display: none;
+      overflow: hidden;
+
+      .container-landscape__img {
+        height: 80vh;
+        width: 150%;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .background-amazonia__container-landscape {
+        display: block;
+        min-width: 50%;
+
+        .container-landscape__img {
+          height: 70vh;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    .main-content__backgorund-amazonia {
+      height: 60vh;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .main-content__backgorund-amazonia {
+      height: 70vh;
+    }
+  }
+}

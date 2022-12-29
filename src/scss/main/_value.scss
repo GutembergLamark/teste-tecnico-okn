@@ -1,0 +1,90 @@
+.main-content__values {
+  @include Flex(flex-start, center, column);
+
+  border-bottom: 1px solid $--black-color;
+
+  .values__about {
+    width: 100%;
+
+    background-color: $--primary-color;
+
+    padding: 2.5rem;
+
+    .about__container {
+      @include Flex(center, normal, row);
+
+      height: 50vh;
+
+      padding: 1.5rem;
+
+      .about__info {
+        @include Flex(center, flex-start, column);
+        gap: 0.625rem;
+
+        height: 50%;
+
+        .about__title {
+          color: $--white-color;
+
+          font-size: 1.25rem;
+        }
+
+        .about__description {
+          color: $--white-color;
+
+          margin: 0;
+        }
+      }
+
+      .about__responsibility {
+        align-self: end;
+      }
+    }
+
+    @media only screen and (min-width: 480px) {
+      .about__container {
+        border: 1px solid $--white-color;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .about__container {
+        height: 60vh;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .values__about {
+      width: calc(50% - 2.5rem);
+
+      padding: 2rem;
+    }
+  }
+
+  .values__info {
+    width: inherit;
+
+    padding: 4rem 2rem;
+
+    border-bottom: 1px solid $--black-color;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .values__info {
+      width: calc(50% - 8rem);
+
+      height: calc(60vh - 4rem);
+
+      padding: 2rem 4rem;
+
+      border: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content__values {
+    flex-direction: row;
+  }
+}
