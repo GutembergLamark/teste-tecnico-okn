@@ -1,0 +1,204 @@
+.footer {
+  .footer__content {
+    @include Flex(center, center, column);
+    gap: 4rem;
+
+    .content__container-info {
+      @include Flex(center, flex-start, row);
+      gap: 4rem;
+
+      padding: 7rem;
+
+      border-bottom: 1px solid $--black-color;
+
+      width: 100%;
+
+      .container-info__fao,
+      .container-info__contact {
+        .fao__title,
+        .contact__title {
+          @include Typography(400, 1rem, uppercase, left);
+
+          margin-bottom: 1rem;
+        }
+
+        .fao__list,
+        .contact__list {
+          @include Flex(center, flex-start, column);
+          gap: 0.875rem;
+
+          .list__item {
+            @include Typography(400, 0.8125rem, uppercase, left);
+          }
+        }
+
+        .fao__list {
+          .list__item {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 480px) {
+      .content__container-info {
+        border: none;
+        border-bottom: 1px solid $--black-color;
+
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .content__container-info {
+        border: none;
+        border-right: 1px solid $--black-color;
+
+        width: 50%;
+      }
+    }
+
+    .content__notices {
+      @include Flex(center, flex-start, row);
+      gap: 4rem;
+
+      width: 100%;
+
+      padding: 4rem;
+
+      .notices__form {
+        width: 60%;
+        .form__container {
+          @include Flex(center, flex-start, column);
+          gap: 1.25rem;
+
+          .container__title {
+            font-family: "Brown", sans-serif;
+
+            @include Typography(bold, 1.5rem, uppercase, normal);
+
+            color: $--primary-color;
+
+            width: 80%;
+
+            margin-bottom: 1.25rem;
+          }
+
+          input {
+            padding: 0.625rem 0;
+
+            border-bottom: 1px solid $--black-color;
+
+            width: 100%;
+          }
+
+          input::placeholder {
+            color: $--black-color;
+
+            @include Typography(400, 0.875rem, uppercase, left);
+          }
+
+          input:focus {
+            outline: none;
+          }
+
+          .container__term {
+            @include Flex(center, center, row);
+            gap: 0.25rem;
+
+            #term {
+              width: max-content;
+
+              cursor: pointer;
+            }
+
+            .term__label {
+              @include Typography(400, 0.75rem, normal, left);
+
+              a {
+                color: $--black-color;
+              }
+
+              cursor: pointer;
+            }
+          }
+        }
+
+        .form__submit {
+          width: 100%;
+
+          padding: 0.625rem;
+          margin-top: 1.25rem;
+
+          background: none;
+
+          border: 1px solid $--black-color;
+
+          @include Typography(400, 0.8125rem, uppercase, center);
+
+          cursor: pointer;
+
+          transition: all 0.5s ease-in-out;
+        }
+
+        .form__submit:hover {
+          background-color: $--primary-color;
+          color: $--white-color;
+
+          border: 1px solid transparent;
+        }
+      }
+
+      .notices__top {
+        background: none;
+
+        @include Typography(400, 0.9375rem, uppercase, center);
+
+        a {
+          color: $--black-color;
+
+          text-decoration: none;
+
+          img {
+            margin-left: 0.25rem;
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .content__notices {
+        justify-content: space-between;
+        gap: 4rem;
+
+        min-width: 50%;
+        width: 50%;
+
+        padding: 4rem;
+
+        .notices__top {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .footer__content {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+
+  .reserved__rights {
+    @include Flex(space-between, center, row);
+
+    width: 100%;
+
+    padding: 0.625rem 6rem;
+
+    border-top: 1px solid $--black-color;
+
+    @include Typography(400, 0.625rem, normal, center);
+  }
+}

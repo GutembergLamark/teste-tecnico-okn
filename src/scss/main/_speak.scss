@@ -1,0 +1,100 @@
+.main-content__speak {
+  @include Flex(center, center, column);
+
+  background-color: $--black-color;
+
+  padding: 5rem 0;
+
+  position: relative;
+
+  pre {
+    position: absolute;
+    top: 3rem;
+    left: -25px;
+
+    color: $--primary-color;
+
+    font-family: "Roboto";
+
+    @include Typography(bold, 2rem, normal, normal);
+
+    line-height: 15px;
+    letter-spacing: 5px;
+  }
+
+  .speak__form-contact {
+    width: 70%;
+
+    @include Flex(space-around, flex-end, column);
+
+    .form-contact__data {
+      @include Flex(space-around, center, row);
+      gap: 1.25rem;
+
+      border: none;
+
+      margin-bottom: 1.25rem;
+
+      width: 100%;
+
+      input {
+        border: 1px solid $--white-color;
+
+        padding: 0.75rem;
+
+        width: 100%;
+
+        background: none;
+        color: $--white-color;
+      }
+
+      input::placeholder {
+        text-transform: uppercase;
+      }
+    }
+
+    .form-contact__message {
+      border: none;
+
+      width: 100%;
+
+      textarea {
+        resize: none;
+
+        width: 100%;
+        height: 9.375rem;
+
+        padding: 1rem;
+
+        background: none;
+        color: $--white-color;
+
+        border: 1px solid $--white-color;
+      }
+
+      textarea::placeholder {
+        text-transform: uppercase;
+      }
+    }
+
+    .form-contact__submit {
+      margin-top: 1.25rem;
+
+      padding: 0.75rem 5rem;
+
+      background-color: $--primary-color;
+      color: $--white-color;
+
+      text-transform: uppercase;
+
+      transition: all 0.5s ease-in-out;
+
+      cursor: pointer;
+    }
+
+    .form-contact__submit:hover {
+      background-color: $--white-color;
+      color: $--black-color;
+    }
+  }
+}

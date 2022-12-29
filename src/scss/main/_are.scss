@@ -1,0 +1,69 @@
+.main-content {
+  .main-content__who-we-are {
+    @include Flex(center, center, column);
+    gap: 3rem;
+
+    padding: 4rem 0;
+
+    border-bottom: 1px solid $--black-color;
+
+    .whoe-we-are__container-info {
+      @include Flex(center, flex-start, row);
+
+      width: 100%;
+
+      position: relative;
+
+      overflow: hidden;
+
+      pre {
+        font-family: "Roboto";
+
+        @include Typography(bold, 2rem, normal, normal);
+
+        position: absolute;
+
+        top: -2.5rem;
+        right: -100px;
+
+        line-height: 15px;
+        letter-spacing: 5px;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .whoe-we-are__container-info {
+        width: 50%;
+      }
+    }
+
+    .who-we-are__container-image {
+      @include Flex(center, center, row);
+
+      width: 100%;
+
+      img {
+        width: 80%;
+
+        border-left: 4rem solid $--primary-color;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .who-we-are__container-image {
+        width: 50%;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .main-content__who-we-are {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+}

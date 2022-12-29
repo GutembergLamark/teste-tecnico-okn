@@ -1,0 +1,57 @@
+$--primary-color: #00a39a;
+
+$--white-color: #ffffff;
+$--black-color: #000000;
+
+body,
+header,
+main,
+footer,
+section,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+figure,
+img,
+button,
+div,
+input,
+form,
+p,
+textarea,
+fieldset,
+legend,
+svg {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("BrownLight Regular.ttf") format("truetype"),
+    url("Brown Bold.ttf") format("truetype"),
+    url("Brown BoldItalic.ttf") format("truetype"),
+    url("BrownExtraBoldCondensed Regular.ttf") format("truetype"),
+    url("BrownExtraBold Regular.ttf") format("truetype"),
+    url("BrownHeavy Regular.ttf") format("truetype"),
+    url("Brown Italic.ttf") format("truetype"),
+    url("BrownLight Italic.ttf") format("truetype"),
+    url("BrownMedium Italic.ttf") format("truetype"),
+    url("BrownMedium Regular.ttf") format("truetype");
+}
