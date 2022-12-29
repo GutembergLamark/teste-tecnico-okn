@@ -26,6 +26,13 @@
         }
       }
     }
+    @media only screen and (min-width: 768px) {
+      .background-amazonia__container-landscape {
+        .container-landscape__img {
+          height: 90vh;
+        }
+      }
+    }
   }
 
   @media only screen and (min-width: 480px) {
@@ -37,6 +44,12 @@
   @media only screen and (min-width: 768px) {
     .main-content__backgorund-amazonia {
       height: 70vh;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .main-content__backgorund-amazonia {
+      height: 90vh;
     }
   }
 }

@@ -157,7 +157,7 @@
       .notices__card {
         width: 30%;
         max-width: 300px;
-        height: 40vh;
+        min-height: 40vh;
       }
     }
   }

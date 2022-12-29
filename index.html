@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./src/scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +22,7 @@
         <section class="header__section-top">
 
             <figure class="section-top__container-logo">
-                <img src="./assets/images/Logo.png" alt="Logo FAO" class="container-logo__img">
+                <img src="./src/assets/images/Logo.png" alt="Logo FAO" class="container-logo__img">
             </figure>
 
             <div class="section-top__search-social-media">
@@ -31,7 +31,7 @@
                     <input type="text" placeholder="FAÇA UMA BUSCA" class="container-search__input">
 
                     <button class="container-search__button">
-                        <img src="./assets/images/Vector.png" alt="Vector Search" class="button__img">
+                        <img src="./src/assets/images/Vector.png" alt="Vector Search" class="button__img">
                     </button>
 
                 </form>
@@ -40,11 +40,11 @@
                 <div class="search-social-media__social-media">
 
                     <a class="social-media__facebook social-media__item">
-                        <img src="./assets/images/Facebook.png" alt="Facebook" class="facebook__img item__img">
+                        <img src="./src/assets/images/Facebook.png" alt="Facebook" class="facebook__img item__img">
                     </a>
 
                     <a class="social-media__instagram social-media__item">
-                        <img src="./assets/images/Instagram.png" alt="Instagram" class="instagram__img item__img">
+                        <img src="./src/assets/images/Instagram.png" alt="Instagram" class="instagram__img item__img">
                     </a>
 
                     <button class="social-media__to-participate">Quero participar</button>
@@ -56,17 +56,17 @@
         <nav class="header__menu-navigation">
             <div class="menu-navigation__dropdown">
                 <button class="dropdown__hamburguer">
-                    <img src="./assets/images/Menu.png" alt="">
+                    <img src="./src/assets/images/Menu.png" alt="">
                 </button>
                 <ul class="menu-navigation__container dropdown__container">
-                    <li class="container__item"><a href="#">O que é</a></li>
-                    <li class="container__item"><a href="">Contexto</a></li>
-                    <li class="container__item"><a href="">Quem somos</a></li>
+                    <li class="container__item"><a href="#deph">O que é</a></li>
+                    <li class="container__item"><a href="#join">Contexto</a></li>
+                    <li class="container__item"><a href="#are">Quem somos</a></li>
                     <li class="container__item dropdown">
                         <button class="dropdown__button" id="container__part">Quero fazer parte</button>
                         <div class="dropdown__content part">
-                            <a href="#projects">Como funciona</a>
-                            <a href="">Portifolio de projetos</a>
+                            <a href="#function">Como funciona</a>
+                            <a href="#projects">Portifolio de projetos</a>
                         </div>
                     </li>
                     <li class="container__item dropdown">
@@ -77,14 +77,14 @@
                             <a href="">Legislação</a>
                         </div>
                     </li>
-                    <li class="container__item"><a href="">Fale Conosco</a></li>
+                    <li class="container__item"><a href="#speak">Fale Conosco</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main class="main-content">
-        <section class="main-content__backgorund-amazonia">
+        <section class="main-content__backgorund-amazonia" id="deph">
             <article class="backgorund-amazonia__info">
                 <h3 class="info__topic">Fundo da Amazônia</h3>
 
@@ -100,21 +100,21 @@
                 <div class="info__container-more">
                     <a class="container-more__link" href="">Saiba Mais</a>
                     <figure class="container-more__container-img">
-                        <img src="./assets/images/Arrow.png" alt="">
+                        <img src="./src/assets/images/Arrow.png" alt="">
                     </figure>
                 </div>
 
             </article>
 
             <figure class="background-amazonia__container-landscape">
-                <img src="./assets/images/paisagem.gif" alt="paisagem" class="container-landscape__img">
+                <img src="./src/assets/images/paisagem.gif" alt="paisagem" class="container-landscape__img">
             </figure>
 
         </section>
 
-        <section class="main-content__who-we-are">
+        <section class="main-content__who-we-are" id="are">
             <figure class="who-we-are__container-image">
-                <img src="./assets/images/ImageQuemSomos.png" alt="Regando plantas">
+                <img src="./src/assets/images/ImageQuemSomos.png" alt="Regando plantas">
             </figure>
 
             <div class="whoe-we-are__container-info">
@@ -136,7 +136,7 @@
                     <div class="info__container-more">
                         <a class="container-more__link" href="">Saiba Mais</a>
                         <figure class="container-more__container-img">
-                            <img src="./assets/images/Arrow.png" alt="">
+                            <img src="./src/assets/images/Arrow.png" alt="">
                         </figure>
                     </div>
                 </article>
@@ -151,7 +151,7 @@
             </div>
         </section>
 
-        <section class="main-content__join">
+        <section class="main-content__join" id="join">
             <div class="join__container-info">
                 <div class="circle"></div>
 
@@ -160,20 +160,20 @@
                     <div class="info__container-more">
                         <a class="container-more__link" href="">Quero participar</a>
                         <figure class="container-more__container-img">
-                            <img src="./assets/images/Arrow.png" alt="">
+                            <img src="./src/assets/images/Arrow.png" alt="">
                         </figure>
                     </div>
                 </article>
             </div>
 
             <div class="join__container-video">
-                <video class="container-video__video" src="./assets/images/FundoAmazonia.mp4"
-                    poster="./assets/images/Thumb.png" play="false">
+                <video class="container-video__video" src="./src/assets/images/FundoAmazonia.mp4"
+                    poster="./src/assets/images/Thumb.png" play="false">
 
                 </video>
                 <div class="container-video__info-video">
                     <button class="video--play">
-                        <img src="./assets/images/Play.png" alt="">
+                        <img src="./src/assets/images/Play.png" alt="">
                     </button>
 
                     <h2 class="video--title">O nosso trabalho é um chamado!</h2>
@@ -188,7 +188,7 @@
 
         </section>
 
-        <section class="main-content__projects">
+        <section class="main-content__projects" id="projects">
             <div class="projects__container-info">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -215,13 +215,13 @@
                                 <div class="info__container-more">
                                     <a class="container-more__link" href="">Saiba Mais</a>
                                     <figure class="container-more__container-img">
-                                        <img src="./assets/images/Arrow-white.png" alt="Arrow">
+                                        <img src="./src/assets/images/Arrow-white.png" alt="Arrow">
                                     </figure>
                                 </div>
                             </article>
 
                             <figure class="info__container-image-project">
-                                <img src="./assets/images/Project-one.png" alt="Primeiro projeto">
+                                <img src="./src/assets/images/Project-one.png" alt="Primeiro projeto">
                             </figure>
                         </div>
                         <div class="swiper-slide">
@@ -247,13 +247,13 @@
                                 <div class="info__container-more">
                                     <a class="container-more__link" href="">Saiba Mais</a>
                                     <figure class="container-more__container-img">
-                                        <img src="./assets/images/Arrow-white.png" alt="Arrow">
+                                        <img src="./src/assets/images/Arrow-white.png" alt="Arrow">
                                     </figure>
                                 </div>
                             </article>
 
                             <figure class="info__container-image-project">
-                                <img src="./assets/images/Project-one.png" alt="Primeiro projeto">
+                                <img src="./src/assets/images/Project-one.png" alt="Primeiro projeto">
                             </figure>
                         </div>
                         <div class="swiper-slide">
@@ -279,13 +279,13 @@
                                 <div class="info__container-more">
                                     <a class="container-more__link" href="">Saiba Mais</a>
                                     <figure class="container-more__container-img">
-                                        <img src="./assets/images/Arrow-white.png" alt="Arrow">
+                                        <img src="./src/assets/images/Arrow-white.png" alt="Arrow">
                                     </figure>
                                 </div>
                             </article>
 
                             <figure class="info__container-image-project">
-                                <img src="./assets/images/Project-one.png" alt="Primeiro projeto">
+                                <img src="./src/assets/images/Project-one.png" alt="Primeiro projeto">
                             </figure>
                         </div>
                         <div class="swiper-slide">
@@ -311,20 +311,20 @@
                                 <div class="info__container-more">
                                     <a class="container-more__link" href="">Saiba Mais</a>
                                     <figure class="container-more__container-img">
-                                        <img src="./assets/images/Arrow-white.png" alt="Arrow">
+                                        <img src="./src/assets/images/Arrow-white.png" alt="Arrow">
                                     </figure>
                                 </div>
                             </article>
 
                             <figure class="info__container-image-project">
-                                <img src="./assets/images/Project-one.png" alt="Primeiro projeto">
+                                <img src="./src/assets/images/Project-one.png" alt="Primeiro projeto">
                             </figure>
                         </div>
 
                     </div>
                     <div class="swiper-pagination">
                         <button>
-                            <img src="./assets/images/Arrow-up.png" alt="">
+                            <img src="./src/assets/images/Arrow-up.png" alt="">
                         </button>
                     </div>
                 </div>
@@ -332,14 +332,14 @@
             </div>
             <button class="projects__all-projects">
                 Ver todos os projetos
-                <img src="./assets/images/Arrow-left.png" alt="Arow Right">
+                <img src="./src/assets/images/Arrow-left.png" alt="Arow Right">
             </button>
         </section>
 
-        <section class="main-content__function" id="projects">
+        <section class="main-content__function" id="function">
             <div class="function__container-info">
                 <figure class="container-info__slogan">
-                    <img src="./assets/images/Junte-se.png" alt="">
+                    <img src="./src/assets/images/Junte-se.png" alt="">
                 </figure>
 
                 <article class="function__info">
@@ -356,13 +356,13 @@
                     <div class="info__container-more">
                         <a class="container-more__link" href="">Entenda</a>
                         <div class="container-more__container-img">
-                            <img src="./assets/images/Arrow.png" alt="Arrow">
+                            <img src="./src/assets/images/Arrow.png" alt="Arrow">
                         </div>
                     </div>
                 </article>
 
                 <figure class="info__container-image-function">
-                    <img src="./assets/images/ImagemComoFunciona.png" alt="Imagem plantação">
+                    <img src="./src/assets/images/ImagemComoFunciona.png" alt="Imagem plantação">
                 </figure>
             </div>
 
@@ -374,7 +374,7 @@
                 <section class="about__container">
                     <div class="about__comunication about__info">
                         <figure class="comunication__container-image">
-                            <img src="./assets/images/Message.png" alt="">
+                            <img src="./src/assets/images/Message.png" alt="">
                         </figure>
 
                         <h3 class="comunication__title about__title">Comunicação</h3>
@@ -387,7 +387,7 @@
                     </div>
                     <div class="about__responsibility about__info">
                         <figure class="responsibility__container-image">
-                            <img src="./assets/images/Gear.png" alt="">
+                            <img src="./src/assets/images/Gear.png" alt="">
                         </figure>
 
                         <h3 class="responsibility__title about__title">Comunicação</h3>
@@ -425,7 +425,7 @@
             <ul class="container__notices">
                 <li class="notices__card">
                     <figure class="card__container-image">
-                        <img src="./assets//images/Belem-negocios.png" alt="Belem Negocios">
+                        <img src="./src/assets//images/Belem-negocios.png" alt="Belem Negocios">
                     </figure>
 
                     <div class="card__text">
@@ -441,12 +441,12 @@
 
                     <button class="card__button-more">
                         Leia mais
-                        <img src="./assets/images/Arrow-left.png" alt="Seta à esquerda">
+                        <img src="./src/assets/images/Arrow-left.png" alt="Seta à esquerda">
                     </button>
                 </li>
                 <li class="notices__card">
                     <figure class="card__container-image">
-                        <img src="./assets//images/Para-terra-boa.png" alt="Belem Negocios">
+                        <img src="./src/assets//images/Para-terra-boa.png" alt="Belem Negocios">
                     </figure>
 
                     <div class="card__text">
@@ -460,12 +460,12 @@
 
                     <button class="card__button-more">
                         Leia mais
-                        <img src="./assets/images/Arrow-left.png" alt="Seta à esquerda">
+                        <img src="./src/assets/images/Arrow-left.png" alt="Seta à esquerda">
                     </button>
                 </li>
                 <li class="notices__card">
                     <figure class="card__container-image">
-                        <img src="./assets//images/CBN-Amazon.png" alt="CBN Amazonia">
+                        <img src="./src/assets//images/CBN-Amazon.png" alt="CBN Amazonia">
                     </figure>
 
                     <div class="card__text">
@@ -479,13 +479,13 @@
 
                     <button class="card__button-more">
                         Leia mais
-                        <img src="./assets/images/Arrow-left.png" alt="Seta à esquerda">
+                        <img src="./src/assets/images/Arrow-left.png" alt="Seta à esquerda">
                     </button>
                 </li>
             </ul>
         </section>
 
-        <section class="main-content__speak">
+        <section class="main-content__speak" id="speak">
 
             <pre>
 ..............
@@ -569,7 +569,7 @@
 
                 <button class="notices__top">
                     <a href="#">Voltar ao topo
-                        <img src="./assets/images/Arrow-up-black.png" alt=""></a>
+                        <img src="./src/assets/images/Arrow-up-black.png" alt=""></a>
                 </button>
             </div>
         </div>
@@ -595,7 +595,7 @@
             },
         });
     </script>
-    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
 </body>
 
 </html>
