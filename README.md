@@ -17,7 +17,7 @@
 ## Links de acesso
 
 - <a href="https://github.com/GutembergLamark/teste-tecnico-okn">Repositório</a>
-- <a href="">Deploy</a>
+- <a href="https://gutemberglamark.github.io/teste-tecnico-okn/">Deploy</a>
 
 #
 
