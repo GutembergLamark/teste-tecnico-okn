@@ -20,22 +20,19 @@ class Video {
     }
     static pause() {
 
-        if (this.video.currentTime > 0) {
+        this.video.pause()
 
-            this.video.pause()
+        this.containerVideo.appendChild(this.infoVideo)
 
-            this.containerVideo.appendChild(this.infoVideo)
+        const title = document.querySelector(".video--title")
+        const watch = document.querySelector(".video--watch")
+        const play = document.querySelector(".video--play img")
 
-            const title = document.querySelector(".video--title")
-            const watch = document.querySelector(".video--watch")
-            const play = document.querySelector(".video--play img")
+        play.src = "../../../src/assets/images/Play.png"
 
-            play.src = "../../../src/assets/images/Play.png"
-
-            if (title && watch) {
-                this.infoVideo.removeChild(title)
-                this.infoVideo.removeChild(watch)
-            }
+        if (title && watch && this.video.currentTime > 0) {
+            this.infoVideo.removeChild(title)
+            this.infoVideo.removeChild(watch)
         }
 
     }
